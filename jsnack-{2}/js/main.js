@@ -1,6 +1,6 @@
 function printObject(o) {
   let out = '';
-  for (let p in o) {
+  for (var p in o) {
     out += p + ': ' + o[p] + '\n';
   }
   return out;

@@ -26,11 +26,11 @@ $(document).ready(function() {
   ];
 
   //JSnack 4B genero punti e falli random
-for(let key in footballSquads){
+for(let i=0; i< footballSquads.length; i++){
 
-  footballSquads[key].punti = getRandom(0, 5);
+  footballSquads[i].punti = getRandom(0, 5);
 
-  footballSquads[key].falli = getRandom(0, 5);
+  footballSquads[i].falli = getRandom(0, 5);
 }
 
   console.log(footballSquads);
