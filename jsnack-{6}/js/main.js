@@ -7,5 +7,11 @@ $(document).ready(function() {
     {name: 'CrissCross', type: 'scarpe', color: 'black'},
     {name: 'Jenny', type: 'borsa', color: 'pink'},
   ];
-  
+
+  const newPropArr = arrayObj.map((el) => {
+
+  el.position = charRandom();
+  return el;
+  });
+  console.log(newPropArr);
 });
