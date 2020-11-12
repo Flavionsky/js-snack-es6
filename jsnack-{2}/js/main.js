@@ -30,12 +30,17 @@ console.log(bici);
 
 let pesoLeggero = bici[0];
 
-for(let i=0; i< bici.length; i++){
+// for(let i=0; i< bici.length; i++){
+//
+//   if(bici[i].peso < pesoLeggero.peso){
+//
+//     pesoLeggero = bici[i];
+//   }
+// }
 
-  if(bici[i].peso < pesoLeggero.peso){
-
-    pesoLeggero = bici[i];
-  }
-}
+bici.forEach((el) => {
+  if(el.peso < pesoLeggero.peso){
+    pesoLeggero = e;
+  }});
 
 console.log(`la bici con il peso minore è : \n ${printObject(pesoLeggero)}`);
