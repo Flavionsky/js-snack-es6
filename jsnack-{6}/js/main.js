@@ -10,8 +10,10 @@ $(document).ready(function() {
 
   const newPropArr = arrayObj.map((el) => {
 
-  el.position = charRandom();
-  return el;
+    const newel = {...el, position: charRandom()};
+    return newel;
+    
   });
   console.log(newPropArr);
+  console.log(arrayObj);
 });
